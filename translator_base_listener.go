@@ -1,6 +1,6 @@
 // Code generated from Translator.g4 by ANTLR 4.8. DO NOT EDIT.
 
-package parser // Translator
+package main // Translator
 
 import "github.com/antlr/antlr4/runtime/Go/antlr"
 
@@ -26,6 +26,24 @@ func (s *BaseTranslatorListener) EnterStart(ctx *StartContext) {}
 
 // ExitStart is called when production start is exited.
 func (s *BaseTranslatorListener) ExitStart(ctx *StartContext) {}
+
+// EnterInsert1 is called when production insert1 is entered.
+func (s *BaseTranslatorListener) EnterInsert1(ctx *Insert1Context) {}
+
+// ExitInsert1 is called when production insert1 is exited.
+func (s *BaseTranslatorListener) ExitInsert1(ctx *Insert1Context) {}
+
+// EnterColumns_list is called when production columns_list is entered.
+func (s *BaseTranslatorListener) EnterColumns_list(ctx *Columns_listContext) {}
+
+// ExitColumns_list is called when production columns_list is exited.
+func (s *BaseTranslatorListener) ExitColumns_list(ctx *Columns_listContext) {}
+
+// EnterValues_list is called when production values_list is entered.
+func (s *BaseTranslatorListener) EnterValues_list(ctx *Values_listContext) {}
+
+// ExitValues_list is called when production values_list is exited.
+func (s *BaseTranslatorListener) ExitValues_list(ctx *Values_listContext) {}
 
 // EnterSelect1 is called when production select1 is entered.
 func (s *BaseTranslatorListener) EnterSelect1(ctx *Select1Context) {}
@@ -56,6 +74,24 @@ func (s *BaseTranslatorListener) EnterCondition(ctx *ConditionContext) {}
 
 // ExitCondition is called when production condition is exited.
 func (s *BaseTranslatorListener) ExitCondition(ctx *ConditionContext) {}
+
+// EnterColumn is called when production column is entered.
+func (s *BaseTranslatorListener) EnterColumn(ctx *ColumnContext) {}
+
+// ExitColumn is called when production column is exited.
+func (s *BaseTranslatorListener) ExitColumn(ctx *ColumnContext) {}
+
+// EnterValue is called when production value is entered.
+func (s *BaseTranslatorListener) EnterValue(ctx *ValueContext) {}
+
+// ExitValue is called when production value is exited.
+func (s *BaseTranslatorListener) ExitValue(ctx *ValueContext) {}
+
+// EnterTable_name is called when production table_name is entered.
+func (s *BaseTranslatorListener) EnterTable_name(ctx *Table_nameContext) {}
+
+// ExitTable_name is called when production table_name is exited.
+func (s *BaseTranslatorListener) ExitTable_name(ctx *Table_nameContext) {}
 
 // EnterAttribute is called when production attribute is entered.
 func (s *BaseTranslatorListener) EnterAttribute(ctx *AttributeContext) {}

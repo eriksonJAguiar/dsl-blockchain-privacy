@@ -1,0 +1,13 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "Z8LJw5RuSi4ugI5wlJrUz8wupu4=",
+			"path": "github.com/antlr/antlr4/runtime/Go/antlr",
+			"revision": "eb1adaa8a7a6993803f08f5ffa0350a45eb24a13",
+			"revisionTime": "2020-07-12T16:27:34Z"
+		}
+	],
+	"rootPath": "DP-Tool-blockchain"
+}

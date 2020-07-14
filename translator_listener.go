@@ -1,6 +1,6 @@
 // Code generated from Translator.g4 by ANTLR 4.8. DO NOT EDIT.
 
-package parser // Translator
+package main // Translator
 
 import "github.com/antlr/antlr4/runtime/Go/antlr"
 
@@ -10,6 +10,15 @@ type TranslatorListener interface {
 
 	// EnterStart is called when entering the start production.
 	EnterStart(c *StartContext)
+
+	// EnterInsert1 is called when entering the insert1 production.
+	EnterInsert1(c *Insert1Context)
+
+	// EnterColumns_list is called when entering the columns_list production.
+	EnterColumns_list(c *Columns_listContext)
+
+	// EnterValues_list is called when entering the values_list production.
+	EnterValues_list(c *Values_listContext)
 
 	// EnterSelect1 is called when entering the select1 production.
 	EnterSelect1(c *Select1Context)
@@ -26,6 +35,15 @@ type TranslatorListener interface {
 	// EnterCondition is called when entering the condition production.
 	EnterCondition(c *ConditionContext)
 
+	// EnterColumn is called when entering the column production.
+	EnterColumn(c *ColumnContext)
+
+	// EnterValue is called when entering the value production.
+	EnterValue(c *ValueContext)
+
+	// EnterTable_name is called when entering the table_name production.
+	EnterTable_name(c *Table_nameContext)
+
 	// EnterAttribute is called when entering the attribute production.
 	EnterAttribute(c *AttributeContext)
 
@@ -34,6 +52,15 @@ type TranslatorListener interface {
 
 	// ExitStart is called when exiting the start production.
 	ExitStart(c *StartContext)
+
+	// ExitInsert1 is called when exiting the insert1 production.
+	ExitInsert1(c *Insert1Context)
+
+	// ExitColumns_list is called when exiting the columns_list production.
+	ExitColumns_list(c *Columns_listContext)
+
+	// ExitValues_list is called when exiting the values_list production.
+	ExitValues_list(c *Values_listContext)
 
 	// ExitSelect1 is called when exiting the select1 production.
 	ExitSelect1(c *Select1Context)
@@ -49,6 +76,15 @@ type TranslatorListener interface {
 
 	// ExitCondition is called when exiting the condition production.
 	ExitCondition(c *ConditionContext)
+
+	// ExitColumn is called when exiting the column production.
+	ExitColumn(c *ColumnContext)
+
+	// ExitValue is called when exiting the value production.
+	ExitValue(c *ValueContext)
+
+	// ExitTable_name is called when exiting the table_name production.
+	ExitTable_name(c *Table_nameContext)
 
 	// ExitAttribute is called when exiting the attribute production.
 	ExitAttribute(c *AttributeContext)

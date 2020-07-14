@@ -4,7 +4,14 @@ grammar Translator;
 WHITESPACE: [ \r\n\t]+ -> skip;
 
 // Rules
-start : select1 EOF;
+start : select1 EOF
+    | insert1 EOF;
+
+insert1 : 'INSERT INTO'  table_name '(' columns_list ')' 'VALUES' '(' values_list ')';
+
+columns_list : column ( ',' column)*;
+
+values_list : value ( ',' value)*;
 
 select1 : 'SELECT' set_list 'FROM' from_list 'WHERE' condition;
 
@@ -15,6 +22,12 @@ function : 'AVG' | 'COUNT' ;
 from_list : relation;
 
 condition : attribute '=' STRING_LITERAL ;
+
+column : IDENTIFIER;
+
+value : STRING_LITERAL;
+
+table_name : IDENTIFIER;
 
 attribute : IDENTIFIER ;
 
