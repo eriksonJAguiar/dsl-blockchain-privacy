@@ -12,6 +12,8 @@ type translatorListener struct {
 
 	// select
 	queryString string // json format to query in couchDB
+	attributes  []string
+	functions   []string
 
 	// insert
 	insertString string // json format to insert in couchDB
@@ -21,17 +23,33 @@ type translatorListener struct {
 }
 
 // select parser
-// SELECT AVG(id) FROM doctype1 WHERE coluna1="valor1"
-// SELECT AVG(coluna1) FROM doctype2 WHERE coluna1=\"valor1\"
+// SELECT AVG(id) FROM doctype2 WHERE coluna1="valor1"
+// SELECT AVG(coluna1) FROM doctype3 WHERE coluna2=\"1111\"
 func (t *translatorListener) ExitSelect1(c *Select1Context) {
 	t.queryString = "{\n" + t.queryString + "\n}"
 }
 
 func (t *translatorListener) ExitSet_list(c *Set_listContext) {
-	t.queryString = "\"fields\":[\"" + c.Attribute().GetText() + "\"]"
+	var s string
+	firstLine := true
+	for _, attribute := range t.attributes {
+		if firstLine == true {
+			firstLine = false
+		} else {
+			s = s + ","
+		}
+		s = s + "\"" + attribute + "\""
+	}
+	t.queryString = "\"fields\":[" + s + "]"
+}
+
+func (t *translatorListener) ExitPair(c *PairContext) {
+	t.attributes = append(t.attributes, c.Attribute().GetText())
+	t.functions = append(t.functions, c.Function().GetText())
 }
 
 func (t *translatorListener) ExitRelation(c *RelationContext) {
+	t.docType = c.GetText()
 	t.queryString = "\"docType\":\"" + c.GetText() + "\"},\n" + t.queryString
 }
 
@@ -42,7 +60,7 @@ func (t *translatorListener) ExitCondition(c *ConditionContext) {
 
 //insert parser executeCommand
 // INSERT INTO doctype1 (coluna1, coluna2, coluna3) VALUES ("valor1","valor2","valor3")
-//INSERT INTO doctype1 (coluna1, coluna2, coluna3) VALUES (\"valor1\",\"valor2\",\"valor3\")
+//INSERT INTO doctype3 (coluna1, coluna2, coluna3) VALUES (\"1111\",\"1111\",\"1111\")
 func (t *translatorListener) ExitColumn(c *ColumnContext) {
 	t.columns = append(t.columns, c.GetText())
 }

@@ -1,4 +1,4 @@
-// Code generated from Translator.g4 by ANTLR 4.8. DO NOT EDIT.
+// Code generated from Translator.g4 by ANTLR 4.7.1. DO NOT EDIT.
 
 package main // Translator
 
@@ -16,47 +16,51 @@ var _ = reflect.Copy
 var _ = strconv.Itoa
 
 var parserATN = []uint16{
-	3, 24715, 42794, 33075, 47597, 16764, 15335, 30598, 22884, 3, 16, 95, 4,
-	2, 9, 2, 4, 3, 9, 3, 4, 4, 9, 4, 4, 5, 9, 5, 4, 6, 9, 6, 4, 7, 9, 7, 4,
-	8, 9, 8, 4, 9, 9, 9, 4, 10, 9, 10, 4, 11, 9, 11, 4, 12, 9, 12, 4, 13, 9,
-	13, 4, 14, 9, 14, 4, 15, 9, 15, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2, 5,
-	2, 37, 10, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
-	3, 3, 4, 3, 4, 3, 4, 7, 4, 52, 10, 4, 12, 4, 14, 4, 55, 11, 4, 3, 5, 3,
-	5, 3, 5, 7, 5, 60, 10, 5, 12, 5, 14, 5, 63, 11, 5, 3, 6, 3, 6, 3, 6, 3,
-	6, 3, 6, 3, 6, 3, 6, 3, 7, 3, 7, 3, 7, 3, 7, 3, 7, 3, 8, 3, 8, 3, 9, 3,
-	9, 3, 10, 3, 10, 3, 10, 3, 10, 3, 11, 3, 11, 3, 12, 3, 12, 3, 13, 3, 13,
-	3, 14, 3, 14, 3, 15, 3, 15, 3, 15, 2, 2, 16, 2, 4, 6, 8, 10, 12, 14, 16,
-	18, 20, 22, 24, 26, 28, 2, 3, 3, 2, 11, 12, 2, 83, 2, 36, 3, 2, 2, 2, 4,
-	38, 3, 2, 2, 2, 6, 48, 3, 2, 2, 2, 8, 56, 3, 2, 2, 2, 10, 64, 3, 2, 2,
-	2, 12, 71, 3, 2, 2, 2, 14, 76, 3, 2, 2, 2, 16, 78, 3, 2, 2, 2, 18, 80,
-	3, 2, 2, 2, 20, 84, 3, 2, 2, 2, 22, 86, 3, 2, 2, 2, 24, 88, 3, 2, 2, 2,
-	26, 90, 3, 2, 2, 2, 28, 92, 3, 2, 2, 2, 30, 31, 5, 10, 6, 2, 31, 32, 7,
-	2, 2, 3, 32, 37, 3, 2, 2, 2, 33, 34, 5, 4, 3, 2, 34, 35, 7, 2, 2, 3, 35,
-	37, 3, 2, 2, 2, 36, 30, 3, 2, 2, 2, 36, 33, 3, 2, 2, 2, 37, 3, 3, 2, 2,
-	2, 38, 39, 7, 3, 2, 2, 39, 40, 5, 24, 13, 2, 40, 41, 7, 4, 2, 2, 41, 42,
-	5, 6, 4, 2, 42, 43, 7, 5, 2, 2, 43, 44, 7, 6, 2, 2, 44, 45, 7, 4, 2, 2,
-	45, 46, 5, 8, 5, 2, 46, 47, 7, 5, 2, 2, 47, 5, 3, 2, 2, 2, 48, 53, 5, 20,
-	11, 2, 49, 50, 7, 7, 2, 2, 50, 52, 5, 20, 11, 2, 51, 49, 3, 2, 2, 2, 52,
-	55, 3, 2, 2, 2, 53, 51, 3, 2, 2, 2, 53, 54, 3, 2, 2, 2, 54, 7, 3, 2, 2,
-	2, 55, 53, 3, 2, 2, 2, 56, 61, 5, 22, 12, 2, 57, 58, 7, 7, 2, 2, 58, 60,
-	5, 22, 12, 2, 59, 57, 3, 2, 2, 2, 60, 63, 3, 2, 2, 2, 61, 59, 3, 2, 2,
-	2, 61, 62, 3, 2, 2, 2, 62, 9, 3, 2, 2, 2, 63, 61, 3, 2, 2, 2, 64, 65, 7,
-	8, 2, 2, 65, 66, 5, 12, 7, 2, 66, 67, 7, 9, 2, 2, 67, 68, 5, 16, 9, 2,
-	68, 69, 7, 10, 2, 2, 69, 70, 5, 18, 10, 2, 70, 11, 3, 2, 2, 2, 71, 72,
-	5, 14, 8, 2, 72, 73, 7, 4, 2, 2, 73, 74, 5, 26, 14, 2, 74, 75, 7, 5, 2,
-	2, 75, 13, 3, 2, 2, 2, 76, 77, 9, 2, 2, 2, 77, 15, 3, 2, 2, 2, 78, 79,
-	5, 28, 15, 2, 79, 17, 3, 2, 2, 2, 80, 81, 5, 26, 14, 2, 81, 82, 7, 13,
-	2, 2, 82, 83, 7, 16, 2, 2, 83, 19, 3, 2, 2, 2, 84, 85, 7, 15, 2, 2, 85,
-	21, 3, 2, 2, 2, 86, 87, 7, 16, 2, 2, 87, 23, 3, 2, 2, 2, 88, 89, 7, 15,
-	2, 2, 89, 25, 3, 2, 2, 2, 90, 91, 7, 15, 2, 2, 91, 27, 3, 2, 2, 2, 92,
-	93, 7, 15, 2, 2, 93, 29, 3, 2, 2, 2, 5, 36, 53, 61,
+	3, 24715, 42794, 33075, 47597, 16764, 15335, 30598, 22884, 3, 16, 105,
+	4, 2, 9, 2, 4, 3, 9, 3, 4, 4, 9, 4, 4, 5, 9, 5, 4, 6, 9, 6, 4, 7, 9, 7,
+	4, 8, 9, 8, 4, 9, 9, 9, 4, 10, 9, 10, 4, 11, 9, 11, 4, 12, 9, 12, 4, 13,
+	9, 13, 4, 14, 9, 14, 4, 15, 9, 15, 4, 16, 9, 16, 3, 2, 3, 2, 3, 2, 3, 2,
+	3, 2, 3, 2, 5, 2, 39, 10, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
+	3, 3, 3, 3, 3, 3, 3, 4, 3, 4, 3, 4, 7, 4, 54, 10, 4, 12, 4, 14, 4, 57,
+	11, 4, 3, 5, 3, 5, 3, 5, 7, 5, 62, 10, 5, 12, 5, 14, 5, 65, 11, 5, 3, 6,
+	3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 6, 3, 7, 3, 7, 3, 7, 7, 7, 77, 10, 7,
+	12, 7, 14, 7, 80, 11, 7, 3, 8, 3, 8, 3, 8, 3, 8, 3, 8, 3, 9, 3, 9, 3, 10,
+	3, 10, 3, 11, 3, 11, 3, 11, 3, 11, 3, 12, 3, 12, 3, 13, 3, 13, 3, 14, 3,
+	14, 3, 15, 3, 15, 3, 16, 3, 16, 3, 16, 2, 2, 17, 2, 4, 6, 8, 10, 12, 14,
+	16, 18, 20, 22, 24, 26, 28, 30, 2, 3, 3, 2, 11, 12, 2, 93, 2, 38, 3, 2,
+	2, 2, 4, 40, 3, 2, 2, 2, 6, 50, 3, 2, 2, 2, 8, 58, 3, 2, 2, 2, 10, 66,
+	3, 2, 2, 2, 12, 73, 3, 2, 2, 2, 14, 81, 3, 2, 2, 2, 16, 86, 3, 2, 2, 2,
+	18, 88, 3, 2, 2, 2, 20, 90, 3, 2, 2, 2, 22, 94, 3, 2, 2, 2, 24, 96, 3,
+	2, 2, 2, 26, 98, 3, 2, 2, 2, 28, 100, 3, 2, 2, 2, 30, 102, 3, 2, 2, 2,
+	32, 33, 5, 10, 6, 2, 33, 34, 7, 2, 2, 3, 34, 39, 3, 2, 2, 2, 35, 36, 5,
+	4, 3, 2, 36, 37, 7, 2, 2, 3, 37, 39, 3, 2, 2, 2, 38, 32, 3, 2, 2, 2, 38,
+	35, 3, 2, 2, 2, 39, 3, 3, 2, 2, 2, 40, 41, 7, 3, 2, 2, 41, 42, 5, 26, 14,
+	2, 42, 43, 7, 4, 2, 2, 43, 44, 5, 6, 4, 2, 44, 45, 7, 5, 2, 2, 45, 46,
+	7, 6, 2, 2, 46, 47, 7, 4, 2, 2, 47, 48, 5, 8, 5, 2, 48, 49, 7, 5, 2, 2,
+	49, 5, 3, 2, 2, 2, 50, 55, 5, 22, 12, 2, 51, 52, 7, 7, 2, 2, 52, 54, 5,
+	22, 12, 2, 53, 51, 3, 2, 2, 2, 54, 57, 3, 2, 2, 2, 55, 53, 3, 2, 2, 2,
+	55, 56, 3, 2, 2, 2, 56, 7, 3, 2, 2, 2, 57, 55, 3, 2, 2, 2, 58, 63, 5, 24,
+	13, 2, 59, 60, 7, 7, 2, 2, 60, 62, 5, 24, 13, 2, 61, 59, 3, 2, 2, 2, 62,
+	65, 3, 2, 2, 2, 63, 61, 3, 2, 2, 2, 63, 64, 3, 2, 2, 2, 64, 9, 3, 2, 2,
+	2, 65, 63, 3, 2, 2, 2, 66, 67, 7, 8, 2, 2, 67, 68, 5, 12, 7, 2, 68, 69,
+	7, 9, 2, 2, 69, 70, 5, 18, 10, 2, 70, 71, 7, 10, 2, 2, 71, 72, 5, 20, 11,
+	2, 72, 11, 3, 2, 2, 2, 73, 78, 5, 14, 8, 2, 74, 75, 7, 7, 2, 2, 75, 77,
+	5, 14, 8, 2, 76, 74, 3, 2, 2, 2, 77, 80, 3, 2, 2, 2, 78, 76, 3, 2, 2, 2,
+	78, 79, 3, 2, 2, 2, 79, 13, 3, 2, 2, 2, 80, 78, 3, 2, 2, 2, 81, 82, 5,
+	16, 9, 2, 82, 83, 7, 4, 2, 2, 83, 84, 5, 28, 15, 2, 84, 85, 7, 5, 2, 2,
+	85, 15, 3, 2, 2, 2, 86, 87, 9, 2, 2, 2, 87, 17, 3, 2, 2, 2, 88, 89, 5,
+	30, 16, 2, 89, 19, 3, 2, 2, 2, 90, 91, 5, 28, 15, 2, 91, 92, 7, 13, 2,
+	2, 92, 93, 7, 16, 2, 2, 93, 21, 3, 2, 2, 2, 94, 95, 7, 15, 2, 2, 95, 23,
+	3, 2, 2, 2, 96, 97, 7, 16, 2, 2, 97, 25, 3, 2, 2, 2, 98, 99, 7, 15, 2,
+	2, 99, 27, 3, 2, 2, 2, 100, 101, 7, 15, 2, 2, 101, 29, 3, 2, 2, 2, 102,
+	103, 7, 15, 2, 2, 103, 31, 3, 2, 2, 2, 6, 38, 55, 63, 78,
 }
 var deserializer = antlr.NewATNDeserializer(nil)
 var deserializedATN = deserializer.DeserializeFromUInt16(parserATN)
 
 var literalNames = []string{
 	"", "'INSERT INTO'", "'('", "')'", "'VALUES'", "','", "'SELECT'", "'FROM'",
-	"'WHERE'", "'AVG'", "'COUNT'", "'='",
+	"'WHERE'", "'AVG'", "'HISTOGRAM'", "'='",
 }
 var symbolicNames = []string{
 	"", "", "", "", "", "", "", "", "", "", "", "", "WHITESPACE", "IDENTIFIER",
@@ -65,7 +69,7 @@ var symbolicNames = []string{
 
 var ruleNames = []string{
 	"start", "insert1", "columns_list", "values_list", "select1", "set_list",
-	"function", "from_list", "condition", "column", "value", "table_name",
+	"pair", "function", "from_list", "condition", "column", "value", "table_name",
 	"attribute", "relation",
 }
 var decisionToDFA = make([]*antlr.DFA, len(deserializedATN.DecisionToState))
@@ -121,14 +125,15 @@ const (
 	TranslatorParserRULE_values_list  = 3
 	TranslatorParserRULE_select1      = 4
 	TranslatorParserRULE_set_list     = 5
-	TranslatorParserRULE_function     = 6
-	TranslatorParserRULE_from_list    = 7
-	TranslatorParserRULE_condition    = 8
-	TranslatorParserRULE_column       = 9
-	TranslatorParserRULE_value        = 10
-	TranslatorParserRULE_table_name   = 11
-	TranslatorParserRULE_attribute    = 12
-	TranslatorParserRULE_relation     = 13
+	TranslatorParserRULE_pair         = 6
+	TranslatorParserRULE_function     = 7
+	TranslatorParserRULE_from_list    = 8
+	TranslatorParserRULE_condition    = 9
+	TranslatorParserRULE_column       = 10
+	TranslatorParserRULE_value        = 11
+	TranslatorParserRULE_table_name   = 12
+	TranslatorParserRULE_attribute    = 13
+	TranslatorParserRULE_relation     = 14
 )
 
 // IStartContext is an interface to support dynamic dispatch.
@@ -233,29 +238,29 @@ func (p *TranslatorParser) Start() (localctx IStartContext) {
 		}
 	}()
 
-	p.SetState(34)
+	p.SetState(36)
 	p.GetErrorHandler().Sync(p)
 
 	switch p.GetTokenStream().LA(1) {
 	case TranslatorParserT__5:
 		p.EnterOuterAlt(localctx, 1)
 		{
-			p.SetState(28)
+			p.SetState(30)
 			p.Select1()
 		}
 		{
-			p.SetState(29)
+			p.SetState(31)
 			p.Match(TranslatorParserEOF)
 		}
 
 	case TranslatorParserT__0:
 		p.EnterOuterAlt(localctx, 2)
 		{
-			p.SetState(31)
+			p.SetState(33)
 			p.Insert1()
 		}
 		{
-			p.SetState(32)
+			p.SetState(34)
 			p.Match(TranslatorParserEOF)
 		}
 
@@ -376,39 +381,39 @@ func (p *TranslatorParser) Insert1() (localctx IInsert1Context) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(36)
+		p.SetState(38)
 		p.Match(TranslatorParserT__0)
 	}
 	{
-		p.SetState(37)
+		p.SetState(39)
 		p.Table_name()
 	}
 	{
-		p.SetState(38)
-		p.Match(TranslatorParserT__1)
-	}
-	{
-		p.SetState(39)
-		p.Columns_list()
-	}
-	{
 		p.SetState(40)
-		p.Match(TranslatorParserT__2)
+		p.Match(TranslatorParserT__1)
 	}
 	{
 		p.SetState(41)
-		p.Match(TranslatorParserT__3)
+		p.Columns_list()
 	}
 	{
 		p.SetState(42)
-		p.Match(TranslatorParserT__1)
+		p.Match(TranslatorParserT__2)
 	}
 	{
 		p.SetState(43)
-		p.Values_list()
+		p.Match(TranslatorParserT__3)
 	}
 	{
 		p.SetState(44)
+		p.Match(TranslatorParserT__1)
+	}
+	{
+		p.SetState(45)
+		p.Values_list()
+	}
+	{
+		p.SetState(46)
 		p.Match(TranslatorParserT__2)
 	}
 
@@ -519,24 +524,24 @@ func (p *TranslatorParser) Columns_list() (localctx IColumns_listContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(46)
+		p.SetState(48)
 		p.Column()
 	}
-	p.SetState(51)
+	p.SetState(53)
 	p.GetErrorHandler().Sync(p)
 	_la = p.GetTokenStream().LA(1)
 
 	for _la == TranslatorParserT__4 {
 		{
-			p.SetState(47)
+			p.SetState(49)
 			p.Match(TranslatorParserT__4)
 		}
 		{
-			p.SetState(48)
+			p.SetState(50)
 			p.Column()
 		}
 
-		p.SetState(53)
+		p.SetState(55)
 		p.GetErrorHandler().Sync(p)
 		_la = p.GetTokenStream().LA(1)
 	}
@@ -648,24 +653,24 @@ func (p *TranslatorParser) Values_list() (localctx IValues_listContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(54)
+		p.SetState(56)
 		p.Value()
 	}
-	p.SetState(59)
+	p.SetState(61)
 	p.GetErrorHandler().Sync(p)
 	_la = p.GetTokenStream().LA(1)
 
 	for _la == TranslatorParserT__4 {
 		{
-			p.SetState(55)
+			p.SetState(57)
 			p.Match(TranslatorParserT__4)
 		}
 		{
-			p.SetState(56)
+			p.SetState(58)
 			p.Value()
 		}
 
-		p.SetState(61)
+		p.SetState(63)
 		p.GetErrorHandler().Sync(p)
 		_la = p.GetTokenStream().LA(1)
 	}
@@ -783,27 +788,27 @@ func (p *TranslatorParser) Select1() (localctx ISelect1Context) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(62)
+		p.SetState(64)
 		p.Match(TranslatorParserT__5)
 	}
 	{
-		p.SetState(63)
+		p.SetState(65)
 		p.Set_list()
 	}
 	{
-		p.SetState(64)
+		p.SetState(66)
 		p.Match(TranslatorParserT__6)
 	}
 	{
-		p.SetState(65)
+		p.SetState(67)
 		p.From_list()
 	}
 	{
-		p.SetState(66)
+		p.SetState(68)
 		p.Match(TranslatorParserT__7)
 	}
 	{
-		p.SetState(67)
+		p.SetState(69)
 		p.Condition()
 	}
 
@@ -848,24 +853,27 @@ func NewSet_listContext(parser antlr.Parser, parent antlr.ParserRuleContext, inv
 
 func (s *Set_listContext) GetParser() antlr.Parser { return s.parser }
 
-func (s *Set_listContext) Function() IFunctionContext {
-	var t = s.GetTypedRuleContext(reflect.TypeOf((*IFunctionContext)(nil)).Elem(), 0)
+func (s *Set_listContext) AllPair() []IPairContext {
+	var ts = s.GetTypedRuleContexts(reflect.TypeOf((*IPairContext)(nil)).Elem())
+	var tst = make([]IPairContext, len(ts))
 
-	if t == nil {
-		return nil
+	for i, t := range ts {
+		if t != nil {
+			tst[i] = t.(IPairContext)
+		}
 	}
 
-	return t.(IFunctionContext)
+	return tst
 }
 
-func (s *Set_listContext) Attribute() IAttributeContext {
-	var t = s.GetTypedRuleContext(reflect.TypeOf((*IAttributeContext)(nil)).Elem(), 0)
+func (s *Set_listContext) Pair(i int) IPairContext {
+	var t = s.GetTypedRuleContext(reflect.TypeOf((*IPairContext)(nil)).Elem(), i)
 
 	if t == nil {
 		return nil
 	}
 
-	return t.(IAttributeContext)
+	return t.(IPairContext)
 }
 
 func (s *Set_listContext) GetRuleContext() antlr.RuleContext {
@@ -891,6 +899,7 @@ func (s *Set_listContext) ExitRule(listener antlr.ParseTreeListener) {
 func (p *TranslatorParser) Set_list() (localctx ISet_listContext) {
 	localctx = NewSet_listContext(p, p.GetParserRuleContext(), p.GetState())
 	p.EnterRule(localctx, 10, TranslatorParserRULE_set_list)
+	var _la int
 
 	defer func() {
 		p.ExitRule()
@@ -910,19 +919,144 @@ func (p *TranslatorParser) Set_list() (localctx ISet_listContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(69)
+		p.SetState(71)
+		p.Pair()
+	}
+	p.SetState(76)
+	p.GetErrorHandler().Sync(p)
+	_la = p.GetTokenStream().LA(1)
+
+	for _la == TranslatorParserT__4 {
+		{
+			p.SetState(72)
+			p.Match(TranslatorParserT__4)
+		}
+		{
+			p.SetState(73)
+			p.Pair()
+		}
+
+		p.SetState(78)
+		p.GetErrorHandler().Sync(p)
+		_la = p.GetTokenStream().LA(1)
+	}
+
+	return localctx
+}
+
+// IPairContext is an interface to support dynamic dispatch.
+type IPairContext interface {
+	antlr.ParserRuleContext
+
+	// GetParser returns the parser.
+	GetParser() antlr.Parser
+
+	// IsPairContext differentiates from other interfaces.
+	IsPairContext()
+}
+
+type PairContext struct {
+	*antlr.BaseParserRuleContext
+	parser antlr.Parser
+}
+
+func NewEmptyPairContext() *PairContext {
+	var p = new(PairContext)
+	p.BaseParserRuleContext = antlr.NewBaseParserRuleContext(nil, -1)
+	p.RuleIndex = TranslatorParserRULE_pair
+	return p
+}
+
+func (*PairContext) IsPairContext() {}
+
+func NewPairContext(parser antlr.Parser, parent antlr.ParserRuleContext, invokingState int) *PairContext {
+	var p = new(PairContext)
+
+	p.BaseParserRuleContext = antlr.NewBaseParserRuleContext(parent, invokingState)
+
+	p.parser = parser
+	p.RuleIndex = TranslatorParserRULE_pair
+
+	return p
+}
+
+func (s *PairContext) GetParser() antlr.Parser { return s.parser }
+
+func (s *PairContext) Function() IFunctionContext {
+	var t = s.GetTypedRuleContext(reflect.TypeOf((*IFunctionContext)(nil)).Elem(), 0)
+
+	if t == nil {
+		return nil
+	}
+
+	return t.(IFunctionContext)
+}
+
+func (s *PairContext) Attribute() IAttributeContext {
+	var t = s.GetTypedRuleContext(reflect.TypeOf((*IAttributeContext)(nil)).Elem(), 0)
+
+	if t == nil {
+		return nil
+	}
+
+	return t.(IAttributeContext)
+}
+
+func (s *PairContext) GetRuleContext() antlr.RuleContext {
+	return s
+}
+
+func (s *PairContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
+	return antlr.TreesStringTree(s, ruleNames, recog)
+}
+
+func (s *PairContext) EnterRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(TranslatorListener); ok {
+		listenerT.EnterPair(s)
+	}
+}
+
+func (s *PairContext) ExitRule(listener antlr.ParseTreeListener) {
+	if listenerT, ok := listener.(TranslatorListener); ok {
+		listenerT.ExitPair(s)
+	}
+}
+
+func (p *TranslatorParser) Pair() (localctx IPairContext) {
+	localctx = NewPairContext(p, p.GetParserRuleContext(), p.GetState())
+	p.EnterRule(localctx, 12, TranslatorParserRULE_pair)
+
+	defer func() {
+		p.ExitRule()
+	}()
+
+	defer func() {
+		if err := recover(); err != nil {
+			if v, ok := err.(antlr.RecognitionException); ok {
+				localctx.SetException(v)
+				p.GetErrorHandler().ReportError(p, v)
+				p.GetErrorHandler().Recover(p, v)
+			} else {
+				panic(err)
+			}
+		}
+	}()
+
+	p.EnterOuterAlt(localctx, 1)
+	{
+		p.SetState(79)
 		p.Function()
 	}
 	{
-		p.SetState(70)
+		p.SetState(80)
 		p.Match(TranslatorParserT__1)
 	}
 	{
-		p.SetState(71)
+		p.SetState(81)
 		p.Attribute()
 	}
 	{
-		p.SetState(72)
+		p.SetState(82)
 		p.Match(TranslatorParserT__2)
 	}
 
@@ -988,7 +1122,7 @@ func (s *FunctionContext) ExitRule(listener antlr.ParseTreeListener) {
 
 func (p *TranslatorParser) Function() (localctx IFunctionContext) {
 	localctx = NewFunctionContext(p, p.GetParserRuleContext(), p.GetState())
-	p.EnterRule(localctx, 12, TranslatorParserRULE_function)
+	p.EnterRule(localctx, 14, TranslatorParserRULE_function)
 	var _la int
 
 	defer func() {
@@ -1009,7 +1143,7 @@ func (p *TranslatorParser) Function() (localctx IFunctionContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(74)
+		p.SetState(84)
 		_la = p.GetTokenStream().LA(1)
 
 		if !(_la == TranslatorParserT__8 || _la == TranslatorParserT__9) {
@@ -1093,7 +1227,7 @@ func (s *From_listContext) ExitRule(listener antlr.ParseTreeListener) {
 
 func (p *TranslatorParser) From_list() (localctx IFrom_listContext) {
 	localctx = NewFrom_listContext(p, p.GetParserRuleContext(), p.GetState())
-	p.EnterRule(localctx, 14, TranslatorParserRULE_from_list)
+	p.EnterRule(localctx, 16, TranslatorParserRULE_from_list)
 
 	defer func() {
 		p.ExitRule()
@@ -1113,7 +1247,7 @@ func (p *TranslatorParser) From_list() (localctx IFrom_listContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(76)
+		p.SetState(86)
 		p.Relation()
 	}
 
@@ -1194,7 +1328,7 @@ func (s *ConditionContext) ExitRule(listener antlr.ParseTreeListener) {
 
 func (p *TranslatorParser) Condition() (localctx IConditionContext) {
 	localctx = NewConditionContext(p, p.GetParserRuleContext(), p.GetState())
-	p.EnterRule(localctx, 16, TranslatorParserRULE_condition)
+	p.EnterRule(localctx, 18, TranslatorParserRULE_condition)
 
 	defer func() {
 		p.ExitRule()
@@ -1214,15 +1348,15 @@ func (p *TranslatorParser) Condition() (localctx IConditionContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(78)
+		p.SetState(88)
 		p.Attribute()
 	}
 	{
-		p.SetState(79)
+		p.SetState(89)
 		p.Match(TranslatorParserT__10)
 	}
 	{
-		p.SetState(80)
+		p.SetState(90)
 		p.Match(TranslatorParserSTRING_LITERAL)
 	}
 
@@ -1293,7 +1427,7 @@ func (s *ColumnContext) ExitRule(listener antlr.ParseTreeListener) {
 
 func (p *TranslatorParser) Column() (localctx IColumnContext) {
 	localctx = NewColumnContext(p, p.GetParserRuleContext(), p.GetState())
-	p.EnterRule(localctx, 18, TranslatorParserRULE_column)
+	p.EnterRule(localctx, 20, TranslatorParserRULE_column)
 
 	defer func() {
 		p.ExitRule()
@@ -1313,7 +1447,7 @@ func (p *TranslatorParser) Column() (localctx IColumnContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(82)
+		p.SetState(92)
 		p.Match(TranslatorParserIDENTIFIER)
 	}
 
@@ -1384,7 +1518,7 @@ func (s *ValueContext) ExitRule(listener antlr.ParseTreeListener) {
 
 func (p *TranslatorParser) Value() (localctx IValueContext) {
 	localctx = NewValueContext(p, p.GetParserRuleContext(), p.GetState())
-	p.EnterRule(localctx, 20, TranslatorParserRULE_value)
+	p.EnterRule(localctx, 22, TranslatorParserRULE_value)
 
 	defer func() {
 		p.ExitRule()
@@ -1404,7 +1538,7 @@ func (p *TranslatorParser) Value() (localctx IValueContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(84)
+		p.SetState(94)
 		p.Match(TranslatorParserSTRING_LITERAL)
 	}
 
@@ -1475,7 +1609,7 @@ func (s *Table_nameContext) ExitRule(listener antlr.ParseTreeListener) {
 
 func (p *TranslatorParser) Table_name() (localctx ITable_nameContext) {
 	localctx = NewTable_nameContext(p, p.GetParserRuleContext(), p.GetState())
-	p.EnterRule(localctx, 22, TranslatorParserRULE_table_name)
+	p.EnterRule(localctx, 24, TranslatorParserRULE_table_name)
 
 	defer func() {
 		p.ExitRule()
@@ -1495,7 +1629,7 @@ func (p *TranslatorParser) Table_name() (localctx ITable_nameContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(86)
+		p.SetState(96)
 		p.Match(TranslatorParserIDENTIFIER)
 	}
 
@@ -1566,7 +1700,7 @@ func (s *AttributeContext) ExitRule(listener antlr.ParseTreeListener) {
 
 func (p *TranslatorParser) Attribute() (localctx IAttributeContext) {
 	localctx = NewAttributeContext(p, p.GetParserRuleContext(), p.GetState())
-	p.EnterRule(localctx, 24, TranslatorParserRULE_attribute)
+	p.EnterRule(localctx, 26, TranslatorParserRULE_attribute)
 
 	defer func() {
 		p.ExitRule()
@@ -1586,7 +1720,7 @@ func (p *TranslatorParser) Attribute() (localctx IAttributeContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(88)
+		p.SetState(98)
 		p.Match(TranslatorParserIDENTIFIER)
 	}
 
@@ -1657,7 +1791,7 @@ func (s *RelationContext) ExitRule(listener antlr.ParseTreeListener) {
 
 func (p *TranslatorParser) Relation() (localctx IRelationContext) {
 	localctx = NewRelationContext(p, p.GetParserRuleContext(), p.GetState())
-	p.EnterRule(localctx, 26, TranslatorParserRULE_relation)
+	p.EnterRule(localctx, 28, TranslatorParserRULE_relation)
 
 	defer func() {
 		p.ExitRule()
@@ -1677,7 +1811,7 @@ func (p *TranslatorParser) Relation() (localctx IRelationContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(90)
+		p.SetState(100)
 		p.Match(TranslatorParserIDENTIFIER)
 	}
 

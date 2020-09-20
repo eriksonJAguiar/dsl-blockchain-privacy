@@ -1,4 +1,4 @@
-// Code generated from Translator.g4 by ANTLR 4.8. DO NOT EDIT.
+// Code generated from Translator.g4 by ANTLR 4.7.1. DO NOT EDIT.
 
 package main // Translator
 
@@ -25,6 +25,9 @@ type TranslatorListener interface {
 
 	// EnterSet_list is called when entering the set_list production.
 	EnterSet_list(c *Set_listContext)
+
+	// EnterPair is called when entering the pair production.
+	EnterPair(c *PairContext)
 
 	// EnterFunction is called when entering the function production.
 	EnterFunction(c *FunctionContext)
@@ -67,6 +70,9 @@ type TranslatorListener interface {
 
 	// ExitSet_list is called when exiting the set_list production.
 	ExitSet_list(c *Set_listContext)
+
+	// ExitPair is called when exiting the pair production.
+	ExitPair(c *PairContext)
 
 	// ExitFunction is called when exiting the function production.
 	ExitFunction(c *FunctionContext)

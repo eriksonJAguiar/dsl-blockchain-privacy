@@ -15,9 +15,11 @@ values_list : value ( ',' value)*;
 
 select1 : 'SELECT' set_list 'FROM' from_list 'WHERE' condition;
 
-set_list : function '(' attribute ')' ;
+set_list : pair ( ',' pair )* ;
 
-function : 'AVG' | 'COUNT' ;
+pair : function '(' attribute ')' ;
+
+function : 'AVG' | 'HISTOGRAM' ;
 
 from_list : relation;
 
@@ -40,5 +42,4 @@ STRING_LITERAL : '"' (NUM_LETTER|'_'|('\\"'))* '"';
 
 fragment
 NUM_LETTER : ('a'..'z'|'A'..'Z'|'0'..'9');
-
 
