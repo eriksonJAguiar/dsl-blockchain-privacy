@@ -1,9 +1,8 @@
-// Code generated from Translator.g4 by ANTLR 4.7.1. DO NOT EDIT.
+// Code generated from Translator.g4 by ANTLR 4.8. DO NOT EDIT.
 
 package main // Translator
-
 import "github.com/antlr/antlr4/runtime/Go/antlr"
- 
+
 // BaseTranslatorListener is a complete listener for a parse tree produced by TranslatorParser.
 type BaseTranslatorListener struct{}
 
@@ -44,6 +43,12 @@ func (s *BaseTranslatorListener) EnterValues_list(ctx *Values_listContext) {}
 
 // ExitValues_list is called when production values_list is exited.
 func (s *BaseTranslatorListener) ExitValues_list(ctx *Values_listContext) {}
+
+// EnterSelect2 is called when production select2 is entered.
+func (s *BaseTranslatorListener) EnterSelect2(ctx *Select2Context) {}
+
+// ExitSelect2 is called when production select2 is exited.
+func (s *BaseTranslatorListener) ExitSelect2(ctx *Select2Context) {}
 
 // EnterSelect1 is called when production select1 is entered.
 func (s *BaseTranslatorListener) EnterSelect1(ctx *Select1Context) {}

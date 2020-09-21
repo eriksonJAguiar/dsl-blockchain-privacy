@@ -4,6 +4,7 @@ go 1.13
 
 require (
 	github.com/antlr/antlr4 v0.0.0-20200712162734-eb1adaa8a7a6
+	github.com/eriksonJAguiar/godiffpriv v0.0.0-20200715180048-ee998bb31da8
 	github.com/fsouza/go-dockerclient v1.6.0 // indirect
 	github.com/grpc-ecosystem/go-grpc-middleware v1.1.0 // indirect
 	github.com/hyperledger/fabric v1.4.4

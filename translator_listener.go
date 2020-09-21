@@ -1,7 +1,6 @@
-// Code generated from Translator.g4 by ANTLR 4.7.1. DO NOT EDIT.
+// Code generated from Translator.g4 by ANTLR 4.8. DO NOT EDIT.
 
 package main // Translator
-
 import "github.com/antlr/antlr4/runtime/Go/antlr"
 
 // TranslatorListener is a complete listener for a parse tree produced by TranslatorParser.
@@ -19,6 +18,9 @@ type TranslatorListener interface {
 
 	// EnterValues_list is called when entering the values_list production.
 	EnterValues_list(c *Values_listContext)
+
+	// EnterSelect2 is called when entering the select2 production.
+	EnterSelect2(c *Select2Context)
 
 	// EnterSelect1 is called when entering the select1 production.
 	EnterSelect1(c *Select1Context)
@@ -64,6 +66,9 @@ type TranslatorListener interface {
 
 	// ExitValues_list is called when exiting the values_list production.
 	ExitValues_list(c *Values_listContext)
+
+	// ExitSelect2 is called when exiting the select2 production.
+	ExitSelect2(c *Select2Context)
 
 	// ExitSelect1 is called when exiting the select1 production.
 	ExitSelect1(c *Select1Context)

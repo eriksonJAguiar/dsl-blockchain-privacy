@@ -14,6 +14,8 @@ type translatorListener struct {
 	queryString string // json format to query in couchDB
 	attributes  []string
 	functions   []string
+	epsilon		string
+
 
 	// insert
 	insertString string // json format to insert in couchDB
@@ -27,6 +29,13 @@ type translatorListener struct {
 // SELECT AVG(coluna1) FROM doctype3 WHERE coluna2=\"1111\"
 func (t *translatorListener) ExitSelect1(c *Select1Context) {
 	t.queryString = "{\n" + t.queryString + "\n}"
+}
+
+func (t *translatorListener) ExitSelect2(c *Select2Context) {
+	numFloat := c.NUM_FLOAT();
+	if numFloat != nil {
+		t.epsilon = numFloat.GetText();
+	}	
 }
 
 func (t *translatorListener) ExitSet_list(c *Set_listContext) {
@@ -57,6 +66,7 @@ func (t *translatorListener) ExitCondition(c *ConditionContext) {
 	t.queryString = "\"" + c.Attribute().GetText() + "\":" + c.STRING_LITERAL().GetText() + "," + t.queryString
 	t.queryString = "\"selector\":{" + t.queryString
 }
+
 
 //insert parser executeCommand
 // INSERT INTO doctype1 (coluna1, coluna2, coluna3) VALUES ("valor1","valor2","valor3")
