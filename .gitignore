@@ -1,4 +1,1 @@
 .vscode
-vendor/github.com
-vendor/golang.org
-vendor/gonum.org
