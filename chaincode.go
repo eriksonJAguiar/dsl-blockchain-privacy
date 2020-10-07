@@ -227,6 +227,9 @@ func (cc *Chaincode) executeCommand(stub shim.ChaincodeStubInterface, args []str
 
 	// insert command
 	if len(listener.insertString) != 0 {
+		if len(args) != 2 {
+			return shim.Error("Wrong number of arguments.")
+		}
 		err := stub.PutState(args[1], []byte(listener.insertString))
 		if err != nil {
 			return shim.Error(err.Error())
@@ -261,7 +264,7 @@ func (cc *Chaincode) executeCommand(stub shim.ChaincodeStubInterface, args []str
 
 // INSERT INTO doctype3 (coluna1, coluna2, coluna3) VALUES (\"123\",\"321\",\"321\")
 // INSERT INTO doctype3 (coluna1, coluna2, coluna3) VALUES (\"123\",\"654\",\"654\")
-// INSERT INTO doctype3 (coluna1, coluna2, coluna3) VALUES (\"123\",\"987\",\"987\")
+// INSERT INTO doctype3 (coluna1, coluna2, coluna3) VALUES (\"valor1\",\"valor2\",\"valor3\")
 // INSERT INTO doctype3 (coluna1, coluna2, coluna3) VALUES (\"3333\",\"3333\",\"3333\")
 // INSERT INTO doctype3 (coluna1, coluna2, coluna3) VALUES (\"2222\",\"2222\",\"2222\")
 
@@ -278,6 +281,11 @@ func (cc *Chaincode) queryCommand(stub shim.ChaincodeStubInterface, listener tra
 
 	// create an array with the data for each attribute
 	var data []DataArray = cc.prepareData(listener, resultsIterator)
+
+	if len(data[0].numeric) == 0 && len(data[0].symbolic) == 0 {
+		buffer.WriteString("Empty Result")
+		return shim.Success(buffer.Bytes())
+	}
 
 	// get all the data from the database
 	var alldata []DataArray = cc.getAllData(stub, listener)
@@ -330,7 +338,6 @@ func (cc *Chaincode) queryCommand(stub shim.ChaincodeStubInterface, listener tra
 			buffer.WriteString("\nresponse ")
 			s := fmt.Sprintf("%v", response)
 			buffer.WriteString(s)
-
 		}
 	}
 
@@ -340,18 +347,23 @@ func (cc *Chaincode) queryCommand(stub shim.ChaincodeStubInterface, listener tra
 // apply sturges rule on DataArray.numeric insertin the generalized data on DataArray.symbolic
 func (d *DataArray) applySturgesRule() {
 	d.symbolic = make([]string, 0, len(d.numeric))
-	if d.maxValue == d.minValue {
-		panic(1)
-	}
+	// if d.maxValue == d.minValue {
+	// 	panic(1)
+	// }
 	N := len(d.numeric)
 	k := 1 + math.Round(math.Log2(float64(N)))
 	delta := d.maxValue - d.minValue
 	a := delta / k
 	for _, value := range d.numeric {
-		classIndex := (value - d.minValue) / a
-		classIndex = math.Floor(classIndex)
-		if classIndex == k { // maximum value doesnt fit to the formula
-			classIndex = k - 1
+		var classIndex float64
+		if delta != 0 { // if all values are not the same
+			classIndex = (value - d.minValue) / a
+			classIndex = math.Floor(classIndex)
+			if classIndex == k { // maximum value doesnt fit to the formula
+				classIndex = k - 1
+			}
+		} else { // all values the same
+			classIndex = 0
 		}
 		d.symbolic = append(d.symbolic, strconv.FormatFloat(classIndex, 'f', 0, 64))
 	}
